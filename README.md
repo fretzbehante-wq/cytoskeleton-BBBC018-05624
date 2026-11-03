@@ -9,7 +9,7 @@ Student ID: 202400712
 
 Dataset: BBBC018 – Human HT29 Colon-Cancer Cells 
 
-Selected Phenotype: Angular cell edges 
+Selected Phenotype: Long projections
 
 Image-Field ID: 05624 
 
@@ -20,7 +20,7 @@ Image-Field ID: 05624
 
 The cytoskeleton is an important component of the cell that provides structural support, maintains cell shape, and allows cells to change their morphology. One of its major components is actin, which forms filaments that help maintain the cell's structure and contribute to cellular movement.
 
-This activity focused on examining F-actin distribution and cell morphology using fluorescence microscopy images of HT29 human colon-cancer cells from the BBBC018 dataset. The selected phenotype was **Angular cell edges**, which is characterized by cell outlines displaying noticeable corners, sharp turns, or angular boundaries.
+This activity focused on examining F-actin distribution and cell morphology using fluorescence microscopy images of HT29 human colon-cancer cells from the BBBC018 dataset. The selected phenotype was **Long projections**, which is characterized by cell outlines displaying noticeable corners, sharp turns, or angular boundaries.
 
 Five cells from image field 05624 were selected for morphological analysis using Fiji/ImageJ. Their measurements were intended to examine cell area, circularity, aspect ratio, and mean actin fluorescence intensity. RStudio was then used to summarize the measurements and generate graphical representations of the results.
 
@@ -32,7 +32,7 @@ The fluorescence images were obtained from the Broad Bioimage Benchmark Collecti
 
 - Dataset: BBBC018
 - Dataset source: [Broad Bioimage Benchmark Collection](https://bbbc.broadinstitute.org/BBBC018)
-- Selected phenotype: Angular cell edges
+- Selected phenotype: Long projections
 - Image-field ID: 05624
 - Actin filename: `05624-actin.DIB`
 - DNA filename: `05624-DNA.DIB`
@@ -119,22 +119,16 @@ The five measured cells had an average area of 263 pixels², indicating differen
 ## Guide Questions
 
 ### 1. Which specific phenotype did you choose, and what visible features support that choice?
-
-The selected phenotype was **Angular cell edges**. This phenotype was identified based on the appearance of cell boundaries displaying noticeable corners, sharp turns, and angular outlines. These morphological features distinguish angular cell edges from cells with predominantly smooth or rounded boundaries.
+The selected phenotype was Long projections. This phenotype is characterized by cells with elongated extensions that extend outward from the main cell body. These projections make the cell appear less compact and give it an irregular or extended shape. In the fluorescence image, the actin channel helps visualize the cell boundaries and extensions, allowing their morphology to be examined.
 
 ### 2. Were your five cells mostly round or elongated? Refer to your circularity and aspect-ratio results.
-
-The shape of the five selected cells will be evaluated using their mean circularity and aspect-ratio measurements. Circularity values closer to 1 indicate more rounded shapes, while lower values indicate less circular or irregular outlines. A higher aspect ratio generally indicates greater elongation.
-
-The final description will be based on the actual measurements obtained from Fiji.
+The five measured cells were generally more elongated or irregular rather than rounded. Their mean circularity was 0.3248, which is relatively far from 1, indicating that their outlines were not close to perfect circles. Their mean aspect ratio was 4.2274, suggesting considerable elongation. This is also supported by the scatter plot, where circularity values ranged from 0.254 to 0.445. These results indicate that the measured regions had less circular and more elongated shapes.
 
 ### 3. What role does actin play in maintaining cell shape and in cell movement?
-
-Actin is an important component of the cytoskeleton that provides structural support and helps maintain cell shape. It also contributes to cell movement by forming structures such as lamellipodia and filopodia, which allow cells to extend their membranes. Through the continuous assembly and disassembly of actin filaments, cells can change their shape and move.
+Actin is an important component of the cytoskeleton that helps maintain cell shape by forming a network of filaments beneath the plasma membrane. It provides structural support while allowing cells to change their shape. Actin also contributes to the formation of cellular projections through the assembly of actin filaments. Structures such as filopodia and lamellipodia extend outward from the cell membrane and help cells interact with their surroundings and move. Therefore, actin is important in maintaining cell structure, forming projections, and supporting cellular movement.
 
 ### 4. Why can a single fixed fluorescence image NOT show how fast a cell moves?
-
-A single fixed fluorescence image captures the structure and appearance of cells at only one point in time. It does not show changes in cell position or shape over time. Therefore, cell movement speed cannot be determined from a single fixed image. Measuring movement requires observations at multiple time points, such as through live-cell imaging.
+A single fixed fluorescence image cannot show how fast a cell moves because it only captures the cell's structure and position at one specific point in time. Although the image allows us to examine cell morphology, F-actin distribution, and cellular projections, it does not show changes in cell position over time. To determine movement speed, cells must be observed at multiple time points, such as through live-cell imaging. By comparing their positions over a measured period, their movement and speed can be calculated.
 
 ## Conclusion
 
