@@ -107,12 +107,11 @@ The following table will summarize the average measurements obtained from the fi
 | Measurement | Mean Value |
 |---|---:|
 | Number of cells measured | 5 |
-| Mean cell area | To be updated |
-| Mean circularity | To be updated |
-| Mean aspect ratio | To be updated |
-| Mean actin fluorescence intensity | To be updated |
-
-The final interpretation will be based on the completed Fiji measurements and RStudio analysis.
+| Mean cell area | 263 pixels² |
+| Mean circularity | 0.3248 |
+| Mean aspect ratio | 4.2274 |
+| Mean actin fluorescence intensity | 508.7696 AU |
+The five measured cells had an average area of 263 pixels², indicating different cell size as observed in the figure. The mean circularity of 0.3248 and aspect ratio of 4.2274 suggest that cells were generally elongated rather than rounded. Meanwhile, the average F-actin fluorescence intensity of 508.7696 AU represents the overall mean actin staining signal of the five cells within the selected image field. 
 
 ## 5. Guide Questions
 
